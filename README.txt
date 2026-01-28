@@ -23,3 +23,8 @@ FOTOGRAFIA NA PÁGINA "SOBRE"
 - Para adicionares a tua foto, coloca uma imagem na mesma pasta do site com o nome:
   minha-foto.jpg
 - Depois faz novo deploy no Netlify (arrastar os ficheiros atualizados).
+
+
+RESPONSIVO (Telemóveis & Tablets)
+- O site já tem menu mobile (botão "Menu") e botões a ocupar a largura no telemóvel.
+- Em tablets (>=600px) os painéis passam a 2 colunas.
