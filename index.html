@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ana Pedro Nails — Agenda de Beleza</title>
+  <meta name="description" content="Ana Pedro Nails — Verniz de gel e unhas de gel. Agenda fechada por agora; a preparar novidades." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="index.html" aria-label="Ir para o início">
+        <img class="brand__logo" src="logo.jpg" alt="Ana Pedro Nails" />
+        <span class="brand__text">
+          <span class="brand__name">Ana Pedro Nails</span>
+          <span class="brand__tag">Verniz de Gel &amp; Unhas de Gel</span>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a href="#agenda">Agenda</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="btn btn--primary" href="https://instagram.com/anapedro.nails" target="_blank" rel="noopener noreferrer">
+        Instagram
+      </a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="agenda">
+      <div class="hero__card">
+        <div class="badge">Agenda de Beleza</div>
+        <h1 id="agenda">Agenda Fechada (por agora)</h1>
+        <p class="lead">
+          Olá! 😊 Obrigada por estares aqui.
+          Neste momento a minha <strong>agenda está fechada</strong>, porque estou a <strong>organizar tudo</strong> e a <strong>preparar novidades</strong>.
+        </p>
+
+        <div class="hero__grid">
+          <div class="panel">
+            <h2>Sobre mim</h2>
+            <p>
+              Sou iniciante e estou a começar no mundo do <strong>verniz de gel</strong> e das <strong>unhas de gel</strong>.
+              Estou a treinar e a aperfeiçoar técnicas para te oferecer um serviço com cuidado, higiene e bom acabamento.
+            </p>
+            <div class="chips" aria-label="Destaques">
+              <span class="chip">Higiene &amp; cuidado</span>
+              <span class="chip">Acabamento natural</span>
+              <span class="chip">Em formação</span>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h2>Queres ser das primeiras a saber?</h2>
+            <p>Quando eu abrir vagas, aviso no Instagram:</p>
+            <p class="ig">
+              <a href="https://instagram.com/anapedro.nails" target="_blank" rel="noopener noreferrer">@anapedro.nails</a>
+            </p>
+            <p class="muted">Podes também enviar mensagem (DM) para dúvidas rápidas.</p>
+          </div>
+        </div>
+
+        <div class="hero__cta" id="contacto">
+          <a class="btn btn--secondary" href="sobre.html">
+            Ver página “Sobre”
+          </a>
+          <a class="btn btn--secondary" href="https://instagram.com/anapedro.nails" target="_blank" rel="noopener noreferrer">
+            Enviar mensagem (DM)
+          </a>
+          <span class="hint">Obrigada pelo apoio 🤍</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__card">
+        <h2>Informações rápidas</h2>
+        <div class="faq">
+          <details>
+            <summary>Quando é que a agenda abre?</summary>
+            <p>Ainda não tenho data definida. Assim que abrir, aviso no Instagram.</p>
+          </details>
+          <details>
+            <summary>Posso reservar já?</summary>
+            <p>Por enquanto não. Segue a página para seres das primeiras a saber quando houver vagas.</p>
+          </details>
+          <details>
+            <summary>Qual é a forma de contacto?</summary>
+            <p>O mais rápido é por DM no Instagram: <a href="https://instagram.com/anapedro.nails" target="_blank" rel="noopener noreferrer">@anapedro.nails</a>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__small">© <span id="year"></span> Ana Pedro Nails</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

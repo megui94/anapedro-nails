@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440" height="900" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff7fb"/>
+      <stop offset="1" stop-color="#fdeaf1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="url(#g)"/>
+  <!-- soft wave bands -->
+  <path d="M0,90 C240,140 480,40 720,90 C960,140 1200,40 1440,90 L1440,180 L0,180 Z" fill="#f6c8d4" opacity="0.55"/>
+  <path d="M0,180 C240,230 480,130 720,180 C960,230 1200,130 1440,180 L1440,270 L0,270 Z" fill="#f2b8c7" opacity="0.50"/>
+  <path d="M0,270 C240,320 480,220 720,270 C960,320 1200,220 1440,270 L1440,360 L0,360 Z" fill="#f6c8d4" opacity="0.45"/>
+
+  <path d="M0,450 C240,500 480,400 720,450 C960,500 1200,400 1440,450 L1440,540 L0,540 Z" fill="#f6c8d4" opacity="0.42"/>
+  <path d="M0,540 C240,590 480,490 720,540 C960,590 1200,490 1440,540 L1440,630 L0,630 Z" fill="#f2b8c7" opacity="0.38"/>
+  <path d="M0,630 C240,680 480,580 720,630 C960,680 1200,580 1440,630 L1440,720 L0,720 Z" fill="#f6c8d4" opacity="0.34"/>
+
+  <path d="M0,780 C240,830 480,730 720,780 C960,830 1200,730 1440,780 L1440,900 L0,900 Z" fill="#f2b8c7" opacity="0.30"/>
+</svg>

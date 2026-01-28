@@ -1,0 +1,406 @@
+/* =========================================================
+   TEMPLATE "AGENDA DE BELEZA" (estilo rosa/waves + serif)
+   Site 1 página — Ana Pedro Nails
+   ========================================================= */
+
+:root{
+  --bg: #fff7fb;
+  --ink: #241a1f;
+  --muted: #6b4b56;
+  --rose: #b86a79;
+  --rose2:#8f4c5d;
+  --card: rgba(255,255,255,0.78);
+  --border: rgba(184,106,121,0.22);
+  --shadow: 0 18px 55px rgba(18,12,15,0.10);
+  --shadow2: 0 10px 28px rgba(18,12,15,0.08);
+  --r1: 22px;
+  --r2: 16px;
+  --maxw: 1040px;
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  color: var(--ink);
+  background: var(--bg) url("waves.svg") top center / cover no-repeat fixed;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a{ color: var(--rose2); text-decoration:none; }
+a:hover{ text-decoration:underline; }
+
+.wrap{
+  width: min(var(--maxw), calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.topbar{
+  position: sticky;
+  top: 0;
+  z-index: 25;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.topbar__inner{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.brand__logo{
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  object-fit: contain;
+  background: rgba(255,255,255,0.65);
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: var(--shadow2);
+}
+
+.brand__text{
+  display:flex;
+  flex-direction: column;
+  line-height: 1.1;
+  min-width: 0;
+}
+.brand__name{
+  font-weight: 900;
+  letter-spacing: .2px;
+}
+.brand__tag{
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 55vw;
+}
+
+.nav{
+  display:none;
+  gap: 14px;
+  align-items:center;
+  color: var(--muted);
+}
+.nav a{
+  color: var(--muted);
+  font-weight: 700;
+}
+.nav a:hover{ color: var(--ink); text-decoration:none; }
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 11px 14px;
+  border-radius: 999px;
+  font-weight: 800;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow2);
+  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+  white-space: nowrap;
+}
+.btn:hover{ transform: translateY(-1px); text-decoration:none; }
+.btn--primary{
+  background: rgba(255,255,255,0.92);
+  color: var(--ink);
+}
+.btn--primary::before{
+  content:"✦";
+  color: var(--rose2);
+  margin-right: 8px;
+  font-weight: 900;
+}
+.btn--secondary{
+  background: linear-gradient(135deg, rgba(184,106,121,0.16), rgba(255,255,255,0.86));
+  color: var(--ink);
+}
+
+.hero{
+  padding: 36px 0 10px;
+}
+.hero__card{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r1);
+  box-shadow: var(--shadow);
+  padding: 28px;
+  overflow: hidden;
+  position: relative;
+}
+.hero__card::after{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  background:
+    radial-gradient(650px 260px at 18% 10%, rgba(184,106,121,0.16), transparent 62%),
+    radial-gradient(520px 280px at 85% 35%, rgba(143,76,93,0.12), transparent 60%);
+  pointer-events:none;
+  z-index: 0;
+}
+.hero__card > *{ position: relative; z-index: 1; }
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap: 8px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: rgba(184,106,121,0.10);
+  border: 1px solid rgba(184,106,121,0.22);
+  color: var(--rose2);
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+.badge::before{ content:"●"; font-size: 10px; }
+
+h1{
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  margin: 12px 0 10px;
+  font-size: clamp(30px, 4.6vw, 46px);
+  line-height: 1.06;
+}
+
+h2{
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  margin: 0 0 10px;
+  letter-spacing: -0.2px;
+}
+
+.lead{
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 72ch;
+}
+.lead strong{ color: var(--ink); }
+
+.hero__grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.panel{
+  border-radius: var(--r2);
+  background: rgba(255,255,255,0.72);
+  border: 1px solid rgba(0,0,0,0.06);
+  padding: 18px;
+}
+.panel p{
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+.ig{
+  margin: 10px 0 0;
+  font-weight: 950;
+  font-size: 18px;
+}
+.muted{ margin-top: 10px; color: var(--muted); font-size: 13px; }
+
+.hero__cta{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+.hint{
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.section{
+  padding: 18px 0 0;
+}
+.section__card{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r1);
+  box-shadow: var(--shadow2);
+  padding: 22px;
+}
+
+.faq details{
+  margin-top: 12px;
+  border-radius: var(--r2);
+  background: rgba(255,255,255,0.72);
+  border: 1px solid rgba(0,0,0,0.06);
+  padding: 12px 14px;
+}
+.faq summary{
+  cursor: pointer;
+  font-weight: 900;
+  list-style: none;
+}
+.faq summary::-webkit-details-marker{ display:none; }
+.faq summary::after{
+  content:"+";
+  float:right;
+  color: var(--rose2);
+  font-weight: 900;
+}
+.faq details[open] summary::after{ content:"–"; }
+.faq p{
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.footer{
+  padding: 22px 0 48px;
+  text-align:center;
+}
+.footer__small{
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0;
+}
+
+/* Acessibilidade */
+a:focus, summary:focus, .btn:focus{
+  outline: 3px solid rgba(184,106,121,0.25);
+  outline-offset: 3px;
+  border-radius: 12px;
+}
+
+/* Desktop */
+@media (min-width: 860px){
+  .nav{ display:flex; }
+  .hero{ padding: 56px 0 10px; }
+  .hero__grid{ grid-template-columns: 1fr 1fr; }
+  .hero__card{ padding: 34px; }
+}
+
+/* Redução de movimento */
+@media (prefers-reduced-motion: reduce){
+  *{ transition:none !important; scroll-behavior:auto !important; }
+}
+
+/* iOS fix: background-attachment fixed pode ser pesado */
+@supports (-webkit-touch-callout: none){
+  body{ background-attachment: scroll; }
+}
+
+
+/* Extras para página "Sobre" */
+.chips{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 0;
+}
+.chip{
+  display:inline-flex;
+  align-items:center;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.74);
+  border: 1px solid rgba(0,0,0,0.06);
+  color: var(--muted);
+  font-weight: 800;
+  font-size: 12px;
+}
+.list{
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+.kv{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 14px;
+}
+.kv__item{
+  background: rgba(255,255,255,0.72);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: var(--r2);
+  padding: 14px;
+}
+.kv__k{
+  font-weight: 950;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.kv__v{
+  color: var(--muted);
+  line-height: 1.7;
+}
+@media (min-width: 860px){
+  .kv{ grid-template-columns: 1fr 1fr; }
+}
+
+
+/* Bloco de fotografia (página "Sobre") */
+.profile{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  align-items: center;
+  margin: 12px 0 6px;
+}
+.profile__photo{
+  width: 170px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px dashed var(--border);
+  background: rgba(255,255,255,0.70);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding: 12px;
+}
+.profile__photo img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  display:none;
+}
+.profile__photo.has-photo{
+  border-style: solid;
+  padding: 0;
+}
+.profile__photo.has-photo img{ display:block; }
+.profile__photo.has-photo .profile__placeholder{ display:none; }
+
+.profile__placeholder{
+  color: var(--muted);
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.profile__placeholder strong{ color:l: var(--ink); }
+
+@media (min-width: 860px){
+  .profile{
+    grid-template-columns: 190px 1fr;
+    gap: 18px;
+  }
+}

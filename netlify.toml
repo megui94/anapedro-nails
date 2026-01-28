@@ -1,0 +1,4 @@
+[build]
+  publish = "."
+
+# Site estático, sem build.
