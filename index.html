@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ana Pedro Nails — Agenda de Beleza</title>
-  <meta name="description" content="Ana Pedro Nails — Verniz de gel e unhas de gel. Agenda fechada por agora; a preparar novidades." />
+  <title>Ana Pedro Nails - Agenda Aberta</title>
+  <meta name="description" content="Ana Pedro Nails - agenda aberta para verniz de gel, unhas de gel e manutencao. Marca por mensagem no Instagram." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,12 +12,10 @@
 
   <link rel="stylesheet" href="styles.css" />
 </head>
-
-
 <body>
   <header class="topbar">
     <div class="wrap topbar__inner">
-      <a class="brand" href="index.html" aria-label="Ir para o início">
+      <a class="brand" href="index.html" aria-label="Ir para o inicio">
         <img class="brand__logo" src="logo.jpg" alt="Ana Pedro Nails" />
         <span class="brand__text">
           <span class="brand__name">Ana Pedro Nails</span>
@@ -27,6 +25,9 @@
 
       <nav class="nav" id="siteNav">
         <a href="#agenda">Agenda</a>
+        <a href="#servicos">Servicos</a>
+        <a href="#como-marcar">Como marcar</a>
+        <a href="#faq">FAQ</a>
         <a href="sobre.html">Sobre</a>
       </nav>
 
@@ -36,7 +37,7 @@
       </button>
 
       <a class="btn btn--primary" href="https://instagram.com/anapedro.nails" target="_blank" rel="noopener noreferrer">
-        Instagram
+        Marcar agora
       </a>
     </div>
   </header>
@@ -44,64 +45,202 @@
   <main class="wrap">
     <section class="hero" aria-labelledby="agenda">
       <div class="hero__card">
-        <div class="badge">Agenda de Beleza</div>
-        <h1 id="agenda">Agenda Fechada (por agora)</h1>
+        <div class="badge badge--open">Agenda aberta</div>
+        <h1 id="agenda">Marcacoes abertas para novas clientes</h1>
         <p class="lead">
-          Olá! 😊 Obrigada por estares aqui.
-          Neste momento a minha <strong>agenda está fechada</strong>, porque estou a <strong>organizar tudo</strong> e a <strong>preparar novidades</strong>.
+          Ola! A minha agenda esta <strong>aberta</strong> para <strong>verniz de gel</strong>, <strong>unhas de gel</strong> e <strong>manutencao</strong>.
+          Se quiseres marcar, envia mensagem no Instagram com o servico que pretendes.
         </p>
 
-        <div class="hero__grid">
-          <div class="panel">
-            <h2>Sobre mim</h2>
-            <p>
-              Sou iniciante e estou a começar no mundo das <strong>unhas de gel</strong>.
-              Estou a treinar e a aperfeiçoar técnicas para te oferecer um serviço com cuidado, higiene e bom acabamento.
-            </p>
-            <div class="chips" aria-label="Destaques">
-              <span class="chip">Higiene &amp; cuidado</span>
-              <span class="chip">Acabamento natural</span>
-              <span class="chip">Formada</span>
+        <div class="hero__grid hero__grid--top">
+          <div class="panel panel--status">
+            <h2>Estado da agenda</h2>
+            <div class="status-list" aria-label="Estado da agenda">
+              <div class="status-item">
+                <span class="status-dot"></span>
+                <span>Agenda atualmente aberta</span>
+              </div>
+              <div class="status-item">
+                <span class="status-dot"></span>
+                <span>Respostas por ordem de mensagem</span>
+              </div>
+              <div class="status-item">
+                <span class="status-dot"></span>
+                <span>Confirmacao apos disponibilidade</span>
+              </div>
             </div>
           </div>
 
           <div class="panel">
-            <h2>Queres ser das primeiras a saber?</h2>
-            <p>Quando eu abrir vagas, aviso no Instagram:</p>
+            <h2>Onde marcar</h2>
+            <p>A forma mais rapida e simples e por mensagem privada no Instagram.</p>
             <p class="ig">
               <a href="https://instagram.com/anapedro.nails" target="_blank" rel="noopener noreferrer">@anapedro.nails</a>
             </p>
-            <p class="muted">Podes também enviar mensagem (DM) para dúvidas rápidas.</p>
+            <p class="muted">Podes enviar nome, servico pretendido e horario preferido.</p>
           </div>
         </div>
 
         <div class="hero__cta" id="contacto">
-          <a class="btn btn--secondary" href="sobre.html">
-            Ver página “Sobre”
-          </a>
           <a class="btn btn--secondary" href="https://instagram.com/anapedro.nails" target="_blank" rel="noopener noreferrer">
-            Enviar mensagem (DM)
+            Enviar mensagem
           </a>
-          <span class="hint">Obrigada pelo apoio 🤍</span>
+          <a class="btn btn--secondary" href="#servicos">
+            Ver servicos
+          </a>
+          <a class="btn btn--secondary" href="#como-marcar">
+            Como marcar
+          </a>
+          <span class="hint">Obrigada pela confianca 🤍</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicos">
+      <div class="section__card">
+        <div class="section__header">
+          <div>
+            <h2>Servicos</h2>
+            <p class="section__lead">Escolhe uma categoria para veres rapidamente os servicos disponiveis.</p>
+          </div>
+          <div class="filter-bar" role="tablist" aria-label="Filtrar servicos">
+            <button class="filter-chip is-active" type="button" data-filter="all">Todos</button>
+            <button class="filter-chip" type="button" data-filter="mais-pedidos">Mais pedidos</button>
+            <button class="filter-chip" type="button" data-filter="manutencao">Manutencao</button>
+            <button class="filter-chip" type="button" data-filter="detalhe">Detalhe</button>
+          </div>
+        </div>
+
+        <div class="service-grid" id="serviceGrid">
+          <article class="service-card" data-category="mais-pedidos">
+            <div class="service-card__top">
+              <div>
+                <div class="service-card__eyebrow">Mais pedido</div>
+                <h3>Verniz de gel</h3>
+              </div>
+              <span class="service-pill">Natural</span>
+            </div>
+            <p>Ideal para quem quer brilho, duracao e um acabamento limpo no dia a dia.</p>
+            <button class="service-toggle" type="button" aria-expanded="false">Ver detalhes</button>
+            <div class="service-more" hidden>
+              <ul class="service-list">
+                <li>Acabamento elegante</li>
+                <li>Cor e formato ajustados ao teu gosto</li>
+                <li>Informacoes finais dadas por mensagem</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="mais-pedidos">
+            <div class="service-card__top">
+              <div>
+                <div class="service-card__eyebrow">Estrutura</div>
+                <h3>Unhas de gel</h3>
+              </div>
+              <span class="service-pill">Alongamento</span>
+            </div>
+            <p>Para quem procura mais estrutura, comprimento e um look mais composto.</p>
+            <button class="service-toggle" type="button" aria-expanded="false">Ver detalhes</button>
+            <div class="service-more" hidden>
+              <ul class="service-list">
+                <li>Formato adaptado ao estilo pretendido</li>
+                <li>Aplicacao com foco em cuidado e acabamento</li>
+                <li>Confirmacao do servico apos analise por mensagem</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="manutencao">
+            <div class="service-card__top">
+              <div>
+                <div class="service-card__eyebrow">Seguimento</div>
+                <h3>Manutencao</h3>
+              </div>
+              <span class="service-pill">Regular</span>
+            </div>
+            <p>Servico pensado para manter o trabalho bonito, seguro e equilibrado.</p>
+            <button class="service-toggle" type="button" aria-expanded="false">Ver detalhes</button>
+            <div class="service-more" hidden>
+              <ul class="service-list">
+                <li>Reforco e ajuste conforme necessario</li>
+                <li>Avaliacao do estado das unhas</li>
+                <li>Marcacao sujeita a disponibilidade</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="detalhe">
+            <div class="service-card__top">
+              <div>
+                <div class="service-card__eyebrow">Personalizacao</div>
+                <h3>Nail art simples</h3>
+              </div>
+              <span class="service-pill">Sob consulta</span>
+            </div>
+            <p>Detalhes discretos e delicados para dar um toque especial ao resultado final.</p>
+            <button class="service-toggle" type="button" aria-expanded="false">Ver detalhes</button>
+            <div class="service-more" hidden>
+              <ul class="service-list">
+                <li>Disponivel consoante o pedido</li>
+                <li>Estilo avaliado antes da confirmacao</li>
+                <li>Referencia visual pode ser enviada na mensagem</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="como-marcar">
+      <div class="section__card">
+        <h2>Como marcar</h2>
+        <div class="steps">
+          <article class="step-card">
+            <span class="step-card__num">1</span>
+            <h3>Envia mensagem</h3>
+            <p>Envia DM no Instagram com o servico que pretendes.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-card__num">2</span>
+            <h3>Indica preferencia</h3>
+            <p>Diz os dias ou horarios que te dao mais jeito.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-card__num">3</span>
+            <h3>Recebe confirmacao</h3>
+            <p>Recebes resposta com a disponibilidade e confirmacao final.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="section">
+      <div class="section__card section__card--cta">
+        <div>
+          <h2>Queres marcar agora?</h2>
+          <p class="section__lead">Abre o Instagram e envia a tua mensagem para iniciar a marcacao.</p>
+        </div>
+        <a class="btn btn--primary" href="https://instagram.com/anapedro.nails" target="_blank" rel="noopener noreferrer">
+          Ir para o Instagram
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
       <div class="section__card">
-        <h2>Informações rápidas</h2>
+        <h2>Perguntas frequentes</h2>
         <div class="faq">
           <details>
-            <summary>Quando é que a agenda abre?</summary>
-            <p>Ainda não tenho data definida. Assim que abrir, aviso no Instagram.</p>
+            <summary>Como faco a marcacao?</summary>
+            <p>As marcacoes sao feitas por mensagem no Instagram, com resposta conforme a disponibilidade.</p>
           </details>
           <details>
-            <summary>Posso reservar já?</summary>
-            <p>Por enquanto não. Segue a página para seres das primeiras a saber quando houver vagas.</p>
+            <summary>Posso enviar foto de inspiracao?</summary>
+            <p>Sim. Podes enviar referencias para eu perceber melhor o estilo pretendido.</p>
           </details>
           <details>
-            <summary>Qual é a forma de contacto?</summary>
-            <p>O mais rápido é por DM no Instagram: <a href="https://instagram.com/anapedro.nails" target="_blank" rel="noopener noreferrer">@anapedro.nails</a>.</p>
+            <summary>Onde sao dados os detalhes finais?</summary>
+            <p>Os detalhes como horario, local e confirmacao sao dados diretamente na conversa.</p>
           </details>
         </div>
       </div>
@@ -112,47 +251,10 @@
     </footer>
   </main>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <a class="floating-cta" href="https://instagram.com/anapedro.nails" target="_blank" rel="noopener noreferrer" aria-label="Marcar no Instagram">
+    Marcar
+  </a>
 
-  <script>
-    (function(){
-      var btn = document.querySelector('.menu-btn');
-      var nav = document.getElementById('siteNav');
-      if(!btn || !nav) return;
-
-      function closeMenu(){
-        btn.setAttribute('aria-expanded', 'false');
-        nav.classList.remove('nav--open');
-      }
-
-      function toggleMenu(){
-        var open = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', String(!open));
-        nav.classList.toggle('nav--open', !open);
-      }
-
-      btn.addEventListener('click', function(e){
-        e.preventDefault();
-        toggleMenu();
-      });
-
-      nav.addEventListener('click', function(e){
-        if(e.target && e.target.tagName === 'A'){ closeMenu(); }
-      });
-
-      document.addEventListener('click', function(e){
-        if(!nav.classList.contains('nav--open')) return;
-        if(nav.contains(e.target) || btn.contains(e.target)) return;
-        closeMenu();
-      });
-
-      window.addEventListener('resize', function(){
-        if(window.innerWidth >= 860){ closeMenu(); }
-      });
-    })();
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
