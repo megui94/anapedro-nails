@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ana Pedro Nails - Agenda Aberta</title>
-  <meta name="description" content="Ana Pedro Nails - agenda aberta para verniz de gel, unhas de gel e manutencao. Marca por mensagem no Instagram." />
+  <meta name="description" content="Ana Pedro Nails - agenda aberta para verniz de gel, extensao em molde, manutencao e remocao. Marca por mensagem no Instagram." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 <body>
   <header class="topbar">
     <div class="wrap topbar__inner">
-      <a class="brand" href="index.html" aria-label="Ir para o inicio">
+      <a class="brand" href="index.html" aria-label="Ir para o início">
         <img class="brand__logo" src="logo.jpg" alt="Ana Pedro Nails" />
         <span class="brand__text">
           <span class="brand__name">Ana Pedro Nails</span>
@@ -48,8 +48,8 @@
         <div class="badge badge--open">Agenda aberta</div>
         <h1 id="agenda">Marcações abertas</h1>
         <p class="lead">
-          Ola! A minha agenda esta <strong>aberta</strong> para <strong>verniz de gel</strong>, <strong>unhas de gel</strong> e <strong>manutencao</strong>.
-          Se quiseres marcar, envia mensagem no Instagram com o servico que pretendes.
+          Olá! A minha agenda está <strong>aberta</strong> para <strong>verniz de gel</strong>, <strong>extensão em molde</strong>, <strong>manutenção</strong> e <strong>remoção</strong>.
+          Se quiseres marcar, envia mensagem no Instagram com o serviço que pretendes.
         </p>
 
         <div class="hero__grid hero__grid--top">
@@ -66,7 +66,7 @@
               </div>
               <div class="status-item">
                 <span class="status-dot"></span>
-                <span>Confirmacao após disponibilidade</span>
+                <span>Confirmação após disponibilidade</span>
               </div>
             </div>
           </div>
@@ -86,7 +86,7 @@
             Enviar mensagem
           </a>
           <a class="btn btn--secondary" href="#servicos">
-            Ver servicos
+            Ver serviços
           </a>
           <a class="btn btn--secondary" href="#como-marcar">
             Como marcar
@@ -100,58 +100,81 @@
       <div class="section__card">
         <div class="section__header">
           <div>
-            <h2>Servicos</h2>
-            <p class="section__lead">Escolhe uma categoria para veres rapidamente os serviços disponveis.</p>
+            <h2>Serviços</h2>
+            <p class="section__lead">Escolhe uma categoria para veres rapidamente os serviços disponíveis.</p>
           </div>
-          <div class="filter-bar" role="tablist" aria-label="Filtrar servicos">
+          <div class="filter-bar" role="tablist" aria-label="Filtrar serviços">
             <button class="filter-chip is-active" type="button" data-filter="all">Todos</button>
-            <button class="filter-chip" type="button" data-filter="mais-pedidos">Mais pedidos</button>
-            <button class="filter-chip" type="button" data-filter="manutencao">Manutencao</button>
-            <button class="filter-chip" type="button" data-filter="detalhe">Detalhe</button>
+            <button class="filter-chip" type="button" data-filter="aplicacao">Aplicação</button>
+            <button class="filter-chip" type="button" data-filter="manutencao">Manutenção</button>
+            <button class="filter-chip" type="button" data-filter="remocao">Remoção</button>
+            <button class="filter-chip" type="button" data-filter="adicionais">Adicionais</button>
           </div>
         </div>
 
         <div class="service-grid" id="serviceGrid">
-          <article class="service-card" data-category="mais-pedidos">
+          <article class="service-card" data-category="aplicacao">
+            <div class="service-card__top">
+              <div>
+                <div class="service-card__eyebrow">Base</div>
+                <h3>Manicure simples</h3>
+              </div>
+              <div class="service-card__right">
+                <span class="service-pill">Clássico</span>
+                <span class="service-price">8€</span>
+              </div>
+            </div>
+            <p>Serviço simples para unhas cuidadas, limpas e com aspeto arranjado.</p>
+            <button class="service-toggle" type="button" aria-expanded="false">Ver detalhes</button>
+            <div class="service-more" hidden>
+              <ul class="service-list">
+                <li>Preparação básica da unha</li>
+                <li>Acabamento limpo e discreto</li>
+                <li>Ideal para um visual natural</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="aplicacao">
             <div class="service-card__top">
               <div>
                 <div class="service-card__eyebrow">Mais pedido</div>
-                <h3>Verniz de gel</h3>
+                <h3>Verniz de Gel (Gelinho)</h3>
               </div>
               <div class="service-card__right">
                 <span class="service-pill">Natural</span>
                 <span class="service-price">14€</span>
               </div>
             </div>
-            <p>Ideal para quem quer brilho, duracao e um acabamento limpo no dia a dia.</p>
+            <p>Ideal para quem procura brilho, durabilidade e um acabamento bonito no dia a dia.</p>
             <button class="service-toggle" type="button" aria-expanded="false">Ver detalhes</button>
             <div class="service-more" hidden>
               <ul class="service-list">
-                <li>Acabamento elegante</li>
-                <li>Cor e formato ajustados ao teu gosto</li>
-                <li>Informacoes finais dadas por mensagem</li>
+                <li>Brilho duradouro</li>
+                <li>Acabamento uniforme</li>
+                <li>Visual elegante e prático</li>
               </ul>
             </div>
           </article>
 
-          <article class="service-card" data-category="mais-pedidos">
+          <article class="service-card" data-category="aplicacao">
             <div class="service-card__top">
               <div>
                 <div class="service-card__eyebrow">Estrutura</div>
-                <h3>Unhas de gel</h3>
+                <h3>Extensão em molde (gel - S/M)</h3>
               </div>
               <div class="service-card__right">
-                <span class="service-pill">Alongamento S/M</span>
+                <span class="service-pill">Alongamento</span>
                 <span class="service-price">20€</span>
               </div>
             </div>
-            <p>Para quem procura mais estrutura, comprimento e um look mais composto.</p>
+            <p>Para quem quer mais comprimento e estrutura com um resultado elegante e cuidado.</p>
             <button class="service-toggle" type="button" aria-expanded="false">Ver detalhes</button>
             <div class="service-more" hidden>
               <ul class="service-list">
-                <li>Formato adaptado ao estilo pretendido</li>
-                <li>Aplicacao com foco em cuidado e acabamento</li>
-                <li>Confirmacao do servico apos analise por mensagem</li>
+                <li>Extensão em tamanho curto ou médio</li>
+                <li>Formato ajustado ao gosto da cliente</li>
+                <li>Possibilidade de adicionais de comprimento</li>
               </ul>
             </div>
           </article>
@@ -160,44 +183,141 @@
             <div class="service-card__top">
               <div>
                 <div class="service-card__eyebrow">Seguimento</div>
-                <h3>Manutencao</h3>
+                <h3>Manutenção Gel</h3>
               </div>
               <div class="service-card__right">
                 <span class="service-pill">Regular</span>
                 <span class="service-price">15€</span>
               </div>
             </div>
-            <p>Servico pensado para manter o trabalho bonito, seguro e equilibrado.</p>
+            <p>Serviço pensado para manter a estrutura bonita, segura e equilibrada.</p>
             <button class="service-toggle" type="button" aria-expanded="false">Ver detalhes</button>
             <div class="service-more" hidden>
               <ul class="service-list">
-                <li>Reforco e ajuste conforme necessario</li>
-                <li>Avaliacao do estado das unhas</li>
-                <li>Marcacao sujeita a disponibilidade</li>
+                <li>Reforço da estrutura</li>
+                <li>Ajuste do crescimento</li>
+                <li>Manutenção do aspeto final</li>
               </ul>
             </div>
           </article>
 
-          <article class="service-card" data-category="detalhe">
+          <article class="service-card" data-category="manutencao">
             <div class="service-card__top">
               <div>
-                <div class="service-card__eyebrow">Personalizacao</div>
-                <h3>Nail art simples</h3>
+                <div class="service-card__eyebrow">Seguimento</div>
+                <h3>Manutenção Verniz de Gel</h3>
               </div>
               <div class="service-card__right">
-                <span class="service-price">+3€</span>
+                <span class="service-pill">Reforço</span>
+                <span class="service-price">10€</span>
               </div>
             </div>
-            <p>Detalhes discretos e delicados para dar um toque especial ao resultado final.</p>
+            <p>Ideal para manter o verniz de gel bonito e com acabamento renovado.</p>
             <button class="service-toggle" type="button" aria-expanded="false">Ver detalhes</button>
             <div class="service-more" hidden>
               <ul class="service-list">
-                <li>Disponivel consoante o pedido</li>
-                <li>Estilo avaliado antes da confirmacao</li>
-                <li>Referencia visual pode ser enviada na mensagem</li>
+                <li>Renovação do aspeto</li>
+                <li>Correção do crescimento</li>
+                <li>Serviço simples e prático</li>
               </ul>
             </div>
           </article>
+
+          <article class="service-card" data-category="remocao">
+            <div class="service-card__top">
+              <div>
+                <div class="service-card__eyebrow">Remoção</div>
+                <h3>Remoção Verniz de Gel</h3>
+              </div>
+              <div class="service-card__right">
+                <span class="service-pill">Cuidadoso</span>
+                <span class="service-price">6€</span>
+              </div>
+            </div>
+            <p>Remoção do verniz de gel com cuidado para preservar a unha natural.</p>
+            <button class="service-toggle" type="button" aria-expanded="false">Ver detalhes</button>
+            <div class="service-more" hidden>
+              <ul class="service-list">
+                <li>Remoção segura</li>
+                <li>Atenção ao estado da unha</li>
+                <li>Processo delicado e controlado</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="remocao">
+            <div class="service-card__top">
+              <div>
+                <div class="service-card__eyebrow">Remoção</div>
+                <h3>Remoção Extensão Gel</h3>
+              </div>
+              <div class="service-card__right">
+                <span class="service-pill">Completo</span>
+                <span class="service-price">12€</span>
+              </div>
+            </div>
+            <p>Remoção da extensão em gel com atenção ao conforto e à proteção da unha.</p>
+            <button class="service-toggle" type="button" aria-expanded="false">Ver detalhes</button>
+            <div class="service-more" hidden>
+              <ul class="service-list">
+                <li>Remoção de estrutura em gel</li>
+                <li>Processo pensado para minimizar agressão</li>
+                <li>Avaliação final da unha natural</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="adicionais">
+            <div class="service-card__top">
+              <div>
+                <div class="service-card__eyebrow">Adicionais</div>
+                <h3>Detalhes extra</h3>
+              </div>
+              <div class="service-card__right">
+                <span class="service-pill">Opcional</span>
+                <span class="service-price">desde +2€</span>
+              </div>
+            </div>
+            <p>Personalizações e efeitos que dão um toque mais especial ao resultado final.</p>
+            <button class="service-toggle" type="button" aria-expanded="false">Ver detalhes</button>
+            <div class="service-more" hidden>
+              <ul class="service-list">
+                <li>Francesa: +2€</li>
+                <li>Babyboomer: +3€</li>
+                <li>Nail art complexa: +3€</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="adicionais">
+            <div class="service-card__top">
+              <div>
+                <div class="service-card__eyebrow">Comprimento</div>
+                <h3>Adicional de extensão</h3>
+              </div>
+              <div class="service-card__right">
+                <span class="service-pill">Extensão</span>
+                <span class="service-price">+4€ / +6€</span>
+              </div>
+            </div>
+            <p>Para extensões maiores do que o comprimento base S/M.</p>
+            <button class="service-toggle" type="button" aria-expanded="false">Ver detalhes</button>
+            <div class="service-more" hidden>
+              <ul class="service-list">
+                <li>Longo (L): +4€</li>
+                <li>Extra longo (XL): +6€</li>
+                <li>Aplicado sobre o valor da extensão</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="panel" style="margin-top:14px;">
+          <h2>Nota importante</h2>
+          <p>
+            Em caso de <strong>4 ou mais unhas para reconstrução</strong>, será cobrado o valor de
+            <strong>1.ª aplicação</strong>.
+          </p>
         </div>
       </div>
     </section>
@@ -209,17 +329,17 @@
           <article class="step-card">
             <span class="step-card__num">1</span>
             <h3>Envia mensagem</h3>
-            <p>Envia DM no Instagram com o servico que pretendes.</p>
+            <p>Envia DM no Instagram com o serviço que pretendes.</p>
           </article>
           <article class="step-card">
             <span class="step-card__num">2</span>
-            <h3>Indica preferencia</h3>
-            <p>Diz os dias ou horarios que te dao mais jeito.</p>
+            <h3>Indica preferência</h3>
+            <p>Diz os dias ou horários que te dão mais jeito.</p>
           </article>
           <article class="step-card">
             <span class="step-card__num">3</span>
-            <h3>Recebe confirmacao</h3>
-            <p>Recebes resposta com a disponibilidade e confirmacao final.</p>
+            <h3>Recebe confirmação</h3>
+            <p>Recebes resposta com a disponibilidade e confirmação final.</p>
           </article>
         </div>
       </div>
@@ -229,7 +349,7 @@
       <div class="section__card section__card--cta">
         <div>
           <h2>Queres marcar agora?</h2>
-          <p class="section__lead">Abre o Instagram e envia a tua mensagem para iniciar a marcacao.</p>
+          <p class="section__lead">Abre o Instagram e envia a tua mensagem para iniciar a marcação.</p>
         </div>
         <a class="btn btn--primary" href="https://instagram.com/anapedro.nails" target="_blank" rel="noopener noreferrer">
           Ir para o Instagram
@@ -242,16 +362,16 @@
         <h2>Perguntas frequentes</h2>
         <div class="faq">
           <details>
-            <summary>Como faco a marcacao?</summary>
-            <p>As marcacoes sao feitas por mensagem no Instagram, com resposta conforme a disponibilidade.</p>
+            <summary>Como faço a marcação?</summary>
+            <p>As marcações são feitas por mensagem no Instagram, com resposta conforme a disponibilidade.</p>
           </details>
           <details>
-            <summary>Posso enviar foto de inspiracao?</summary>
-            <p>Sim. Podes enviar referencias para eu perceber melhor o estilo pretendido.</p>
+            <summary>Posso enviar foto de inspiração?</summary>
+            <p>Sim. Podes enviar referências para eu perceber melhor o estilo pretendido.</p>
           </details>
           <details>
-            <summary>Onde sao dados os detalhes finais?</summary>
-            <p>Os detalhes como horario, local e confirmacao sao dados diretamente na conversa.</p>
+            <summary>Onde são dados os detalhes finais?</summary>
+            <p>Os detalhes como horário, local e confirmação são dados diretamente na conversa.</p>
           </details>
         </div>
       </div>
